@@ -11,7 +11,6 @@ import SpriteKit
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     //----------------Variables/Constants----------------------
-    // Class variables are not yet supported in swift, so this looks a little messy
     
     private let ball = Ball.getSingletonBall
     

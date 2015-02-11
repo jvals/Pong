@@ -10,6 +10,7 @@
 		A5090BCC1A89F259000E5C31 /* Paddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5090BCB1A89F259000E5C31 /* Paddle.swift */; };
 		A5090BCE1A89F54D000E5C31 /* WallHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5090BCD1A89F54D000E5C31 /* WallHorizontal.swift */; };
 		A52A84E61A8A05E1002597DC /* WallVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A84E51A8A05E1002597DC /* WallVertical.swift */; };
+		A56C3BD71A8BA7A80019E1D6 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56C3BD61A8BA7A80019E1D6 /* model.swift */; };
 		A57FBD161A89EF3A00A4229E /* enumDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FBD151A89EF3A00A4229E /* enumDirection.swift */; };
 		A57FBD181A89F1B500A4229E /* ScoreLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FBD171A89F1B500A4229E /* ScoreLabel.swift */; };
 		A5E15E6B1A89EA3800EA12A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E15E6A1A89EA3800EA12A6 /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 		A5090BCB1A89F259000E5C31 /* Paddle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paddle.swift; sourceTree = "<group>"; };
 		A5090BCD1A89F54D000E5C31 /* WallHorizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallHorizontal.swift; sourceTree = "<group>"; };
 		A52A84E51A8A05E1002597DC /* WallVertical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallVertical.swift; sourceTree = "<group>"; };
+		A56C3BD61A8BA7A80019E1D6 /* model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		A57FBD151A89EF3A00A4229E /* enumDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = enumDirection.swift; sourceTree = "<group>"; };
 		A57FBD171A89F1B500A4229E /* ScoreLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreLabel.swift; sourceTree = "<group>"; };
 		A5E15E651A89EA3800EA12A6 /* Pong2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 				A5E15E901A89EBCA00EA12A6 /* Ball.swift */,
 				A57FBD151A89EF3A00A4229E /* enumDirection.swift */,
 				A5E15E6E1A89EA3800EA12A6 /* GameScene.swift */,
+				A56C3BD61A8BA7A80019E1D6 /* model.swift */,
 				A5E15E701A89EA3800EA12A6 /* GameViewController.swift */,
 				A5090BCB1A89F259000E5C31 /* Paddle.swift */,
 				A57FBD171A89F1B500A4229E /* ScoreLabel.swift */,
@@ -238,6 +241,7 @@
 			files = (
 				A5E15E911A89EBCA00EA12A6 /* Ball.swift in Sources */,
 				A5090BCE1A89F54D000E5C31 /* WallHorizontal.swift in Sources */,
+				A56C3BD71A8BA7A80019E1D6 /* model.swift in Sources */,
 				A5090BCC1A89F259000E5C31 /* Paddle.swift in Sources */,
 				A5E15E6F1A89EA3800EA12A6 /* GameScene.swift in Sources */,
 				A52A84E61A8A05E1002597DC /* WallVertical.swift in Sources */,

@@ -193,6 +193,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             case .Left : offset = ball.position.y - leftPaddle.position.y
             case .Right : offset = ball.position.y - rightPaddle.position.y
         }
-        return offset * 10
+        return offset * offset
     } 
 }

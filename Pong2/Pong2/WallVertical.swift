@@ -10,7 +10,7 @@ import SpriteKit
 
 class VerticalWall: SKSpriteNode {
     override init() {
-        super.init(texture: nil, color: UIColor.clearColor(), size: CGSize(width: 1, height: 400))
+        super.init(texture: nil, color: UIColor.clearColor(), size: CGSize(width: 10, height: 400))
     }
     
     convenience init(direction : Direction) {

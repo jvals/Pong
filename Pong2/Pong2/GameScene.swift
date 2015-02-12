@@ -12,12 +12,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     //----------------Variables/Constants----------------------
     
+    private var model : Model!
+    
     private let ball = Ball.getSingletonBall
     
-    private var p1Score : Int = 0
-    private var p2Score : Int = 0
-    
-    private var hits : CGFloat = 0.0
+    // didSet is executed whenever the property changes
+    private var p1Score : Int = 0 { didSet { model.p1Score = p1Score } }
+    private var p2Score : Int = 0 { didSet { model.p2Score = p2Score } }
     
     private let p1ScoreLabel = ScoreLabel()
     private let p2ScoreLabel = ScoreLabel()
@@ -71,6 +72,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         // Initial impulse
         ball.physicsBody?.applyImpulse(CGVectorMake(-2, 0))
+        
+        //Initialize the model
+        
+        model = Model(ballPosition: ball.position, leftPaddlePosition: leftPaddle.position, rightPaddlePosition: rightPaddle.position, p1Score: p1Score, p2Score: p2Score)
         
     }
     
@@ -126,6 +131,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         // move the ai paddle
         moveEnemyPaddleToPredictedPoint()
+    }
+    
+    override func update(currentTime: NSTimeInterval) {
+        /* I know this is dirty, but I don't quite understand how to implement observers
+        for specific properties (.position) */
+        model.ballPosition = ball.position
+        model.leftPaddlePosition = leftPaddle.position
+        model.rightPaddlePosition = rightPaddle.position
     }
     
     

@@ -9,15 +9,15 @@
 import SpriteKit
 
 class Model {
-    var ballPosition : CGPoint! {
-        didSet {
-            println("Ballposition was changed")
-        }
-    }
-    var leftPaddlePosition : CGPoint!
-    var rightPaddlePosition : CGPoint!
-    var p1Score : Int!
-    var p2Score : Int!
+    
+    /* didSet can be used to notify observers about changes to a property
+    this is probably not how you are supposed to implement observers ... */
+    
+    var ballPosition : CGPoint! //{ didSet { println("Ballposition was changed to \(ballPosition)") } }
+    var leftPaddlePosition : CGPoint! //{ didSet { println("leftPaddlePosition was changed to \(leftPaddlePosition)") } }
+    var rightPaddlePosition : CGPoint! //{ didSet { println("rightPaddlePosition was changed to \(rightPaddlePosition)") } }
+    var p1Score : Int! { didSet { println("p1Score was changed to \(p1Score)") } }
+    var p2Score : Int! { didSet { println("p2Score was changed to \(p2Score)") } }
     
     init(ballPosition : CGPoint, leftPaddlePosition : CGPoint, rightPaddlePosition : CGPoint, p1Score : Int, p2Score : Int) {
         self.ballPosition = ballPosition

@@ -1,6 +1,6 @@
 //
 //  model.swift
-//  Pong2
+//  PongV2
 //
 //  Created by Jørgen Valstad on 11.02.15.
 //  Copyright (c) 2015 Jørgen Valstad. All rights reserved.
@@ -9,10 +9,6 @@
 import SpriteKit
 
 class Model {
-    
-    /* didSet can be used to notify observers about changes to a property
-    this is probably not how you are supposed to implement observers ... */
-    
     var ballPosition : CGPoint! //{ didSet { println("Ballposition was changed to \(ballPosition)") } }
     var leftPaddlePosition : CGPoint! //{ didSet { println("leftPaddlePosition was changed to \(leftPaddlePosition)") } }
     var rightPaddlePosition : CGPoint! //{ didSet { println("rightPaddlePosition was changed to \(rightPaddlePosition)") } }

@@ -10,13 +10,13 @@
 		A5ACC6481A91F90B002FCC75 /* PongV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC6471A91F90B002FCC75 /* PongV2Tests.swift */; };
 		A5ACC65F1A91F971002FCC75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC6511A91F971002FCC75 /* AppDelegate.swift */; };
 		A5ACC6601A91F971002FCC75 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC6521A91F971002FCC75 /* Ball.swift */; };
-		A5ACC6611A91F971002FCC75 /* enumDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC6531A91F971002FCC75 /* enumDirection.swift */; };
+		A5ACC6611A91F971002FCC75 /* EnumDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC6531A91F971002FCC75 /* EnumDirection.swift */; };
 		A5ACC6621A91F971002FCC75 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC6541A91F971002FCC75 /* GameScene.swift */; };
 		A5ACC6631A91F971002FCC75 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC6551A91F971002FCC75 /* GameViewController.swift */; };
-		A5ACC6641A91F971002FCC75 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC6561A91F971002FCC75 /* model.swift */; };
+		A5ACC6641A91F971002FCC75 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC6561A91F971002FCC75 /* Model.swift */; };
 		A5ACC6651A91F971002FCC75 /* Paddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC6571A91F971002FCC75 /* Paddle.swift */; };
 		A5ACC6661A91F971002FCC75 /* ScoreLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC6581A91F971002FCC75 /* ScoreLabel.swift */; };
-		A5ACC6671A91F971002FCC75 /* structPhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC6591A91F971002FCC75 /* structPhysicsCategory.swift */; };
+		A5ACC6671A91F971002FCC75 /* StructPhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC6591A91F971002FCC75 /* StructPhysicsCategory.swift */; };
 		A5ACC6681A91F971002FCC75 /* WallHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC65A1A91F971002FCC75 /* WallHorizontal.swift */; };
 		A5ACC6691A91F971002FCC75 /* WallVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC65B1A91F971002FCC75 /* WallVertical.swift */; };
 		A5ACC66A1A91F971002FCC75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5ACC65C1A91F971002FCC75 /* Main.storyboard */; };
@@ -42,13 +42,13 @@
 		A5ACC6471A91F90B002FCC75 /* PongV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongV2Tests.swift; sourceTree = "<group>"; };
 		A5ACC6511A91F971002FCC75 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5ACC6521A91F971002FCC75 /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
-		A5ACC6531A91F971002FCC75 /* enumDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = enumDirection.swift; sourceTree = "<group>"; };
+		A5ACC6531A91F971002FCC75 /* EnumDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumDirection.swift; sourceTree = "<group>"; };
 		A5ACC6541A91F971002FCC75 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		A5ACC6551A91F971002FCC75 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		A5ACC6561A91F971002FCC75 /* model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		A5ACC6561A91F971002FCC75 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A5ACC6571A91F971002FCC75 /* Paddle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paddle.swift; sourceTree = "<group>"; };
 		A5ACC6581A91F971002FCC75 /* ScoreLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreLabel.swift; sourceTree = "<group>"; };
-		A5ACC6591A91F971002FCC75 /* structPhysicsCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = structPhysicsCategory.swift; sourceTree = "<group>"; };
+		A5ACC6591A91F971002FCC75 /* StructPhysicsCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructPhysicsCategory.swift; sourceTree = "<group>"; };
 		A5ACC65A1A91F971002FCC75 /* WallHorizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallHorizontal.swift; sourceTree = "<group>"; };
 		A5ACC65B1A91F971002FCC75 /* WallVertical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallVertical.swift; sourceTree = "<group>"; };
 		A5ACC65C1A91F971002FCC75 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -97,13 +97,13 @@
 			children = (
 				A5ACC6511A91F971002FCC75 /* AppDelegate.swift */,
 				A5ACC6521A91F971002FCC75 /* Ball.swift */,
-				A5ACC6531A91F971002FCC75 /* enumDirection.swift */,
+				A5ACC6531A91F971002FCC75 /* EnumDirection.swift */,
 				A5ACC6541A91F971002FCC75 /* GameScene.swift */,
 				A5ACC6551A91F971002FCC75 /* GameViewController.swift */,
-				A5ACC6561A91F971002FCC75 /* model.swift */,
+				A5ACC6561A91F971002FCC75 /* Model.swift */,
 				A5ACC6571A91F971002FCC75 /* Paddle.swift */,
 				A5ACC6581A91F971002FCC75 /* ScoreLabel.swift */,
-				A5ACC6591A91F971002FCC75 /* structPhysicsCategory.swift */,
+				A5ACC6591A91F971002FCC75 /* StructPhysicsCategory.swift */,
 				A5ACC65A1A91F971002FCC75 /* WallHorizontal.swift */,
 				A5ACC65B1A91F971002FCC75 /* WallVertical.swift */,
 				A5ACC65C1A91F971002FCC75 /* Main.storyboard */,
@@ -240,15 +240,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5ACC6631A91F971002FCC75 /* GameViewController.swift in Sources */,
-				A5ACC6641A91F971002FCC75 /* model.swift in Sources */,
-				A5ACC6671A91F971002FCC75 /* structPhysicsCategory.swift in Sources */,
+				A5ACC6641A91F971002FCC75 /* Model.swift in Sources */,
+				A5ACC6671A91F971002FCC75 /* StructPhysicsCategory.swift in Sources */,
 				A5ACC6601A91F971002FCC75 /* Ball.swift in Sources */,
 				A5ACC65F1A91F971002FCC75 /* AppDelegate.swift in Sources */,
 				A5ACC6621A91F971002FCC75 /* GameScene.swift in Sources */,
 				A5ACC6691A91F971002FCC75 /* WallVertical.swift in Sources */,
 				A5ACC6651A91F971002FCC75 /* Paddle.swift in Sources */,
 				A5ACC6681A91F971002FCC75 /* WallHorizontal.swift in Sources */,
-				A5ACC6611A91F971002FCC75 /* enumDirection.swift in Sources */,
+				A5ACC6611A91F971002FCC75 /* EnumDirection.swift in Sources */,
 				A5ACC6661A91F971002FCC75 /* ScoreLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,9 +19,6 @@ DerivedData
 *.xcworkspacedata
 *.xcworkspace
 
-
-iPhone+Introduction+Excercise.pdf
-
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However

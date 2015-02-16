@@ -1,15 +1,15 @@
 //
-//  Pong2Tests.swift
-//  Pong2Tests
+//  PongV2Tests.swift
+//  PongV2Tests
 //
-//  Created by Jørgen Valstad on 10.02.15.
+//  Created by Jørgen Valstad on 16.02.15.
 //  Copyright (c) 2015 Jørgen Valstad. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class Pong2Tests: XCTestCase {
+class PongV2Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

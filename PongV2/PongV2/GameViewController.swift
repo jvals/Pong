@@ -1,6 +1,6 @@
 //
 //  GameViewController.swift
-//  Pong2
+//  PongV2
 //
 //  Created by Jørgen Valstad on 10.02.15.
 //  Copyright (c) 2015 Jørgen Valstad. All rights reserved.

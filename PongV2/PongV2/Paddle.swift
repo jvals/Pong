@@ -1,6 +1,6 @@
 //
-//  VWall.swift
-//  Pong2
+//  Paddle.swift
+//  PongV2
 //
 //  Created by Jørgen Valstad on 10.02.15.
 //  Copyright (c) 2015 Jørgen Valstad. All rights reserved.
@@ -8,22 +8,19 @@
 
 import SpriteKit
 
-class VerticalWall: SKSpriteNode {
-    override init() {
-        super.init(texture: nil, color: UIColor.clearColor(), size: CGSize(width: 10, height: 400))
-    }
+class Paddle: SKSpriteNode {
     
-    convenience init(direction : Direction) {
-        self.init()
-        
+    override init() {
+        super.init(texture: nil, color: UIColor.whiteColor(), size: CGSize(width: 10, height: 40))
         self.physicsBody = SKPhysicsBody(rectangleOfSize: self.size)
         if let physics = self.physicsBody {
             physics.dynamic = false
             physics.friction = 0.0
+            physics.categoryBitMask = PhysicsCategory.paddle
             
-            physics.categoryBitMask = direction.returnWall()
+            // precisecollisiondetection yields better results when the game gets fast
+            physics.usesPreciseCollisionDetection = true
         }
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

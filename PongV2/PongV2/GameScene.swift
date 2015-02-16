@@ -1,6 +1,6 @@
 //
 //  GameScene.swift
-//  Pong2
+//  PongV2
 //
 //  Created by Jørgen Valstad on 10.02.15.
 //  Copyright (c) 2015 Jørgen Valstad. All rights reserved.
@@ -11,14 +11,14 @@ import SpriteKit
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     //----------------Variables/Constants----------------------
-    // Class variables are not yet supported in swift, so this looks a little messy
+    
+    private var model : Model!
     
     private let ball = Ball.getSingletonBall
     
-    private var p1Score : Int = 0
-    private var p2Score : Int = 0
-    
-    private var hits : CGFloat = 0.0
+    // didSet is executed whenever the property changes
+    private var p1Score : Int = 0 { didSet { model.p1Score = p1Score } }
+    private var p2Score : Int = 0 { didSet { model.p2Score = p2Score } }
     
     private let p1ScoreLabel = ScoreLabel()
     private let p2ScoreLabel = ScoreLabel()
@@ -50,8 +50,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         topWall.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMaxY(self.frame) - 20)
         groundWall.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMinY(self.frame) + 20)
-        rightWall.position = CGPoint(x: CGRectGetMaxX(self.frame), y: CGRectGetMidY(self.frame))
-        leftWall.position = CGPoint(x: CGRectGetMinX(self.frame), y: CGRectGetMidY(self.frame))
+        rightWall.position = CGPoint(x: CGRectGetMaxX(self.frame)+15, y: CGRectGetMidY(self.frame))
+        leftWall.position = CGPoint(x: CGRectGetMinX(self.frame)-15, y: CGRectGetMidY(self.frame))
         
         leftPaddle.position = CGPoint(x: CGRectGetMinX(self.frame)+20, y: CGRectGetMidY(self.frame))
         rightPaddle.position = CGPoint(x: CGRectGetMaxX(self.frame)-20, y: CGRectGetMidY(self.frame))
@@ -72,6 +72,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         // Initial impulse
         ball.physicsBody?.applyImpulse(CGVectorMake(-2, 0))
+        
+        //Initialize the model
+        model = Model(ballPosition: ball.position, leftPaddlePosition: leftPaddle.position, rightPaddlePosition: rightPaddle.position, p1Score: p1Score, p2Score: p2Score)
         
     }
     
@@ -127,6 +130,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         // move the ai paddle
         moveEnemyPaddleToPredictedPoint()
+    }
+    
+    override func update(currentTime: NSTimeInterval) {
+        // xaxaxaxaxaxa
+        model.ballPosition = ball.position
+        model.leftPaddlePosition = leftPaddle.position
+        model.rightPaddlePosition = rightPaddle.position
     }
     
     
